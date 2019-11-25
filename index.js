@@ -72,6 +72,7 @@ function wagesEarnedOnDate(timeStamp){
 }
 
 function allWagesFor() {
+    //had to change from let allWagesFor = function() to this so the tests would pass, otherwise it was showing undefined!!
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
     })
